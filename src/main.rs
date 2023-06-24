@@ -381,9 +381,6 @@ impl Application for App {
                 }
             }
         }
-
-        eprintln!("message_size: {}", message_record.len());
-
         let chat_area = column![
             Container::new(Scrollable::new(
                 Container::new(column(message_record)).width(Length::Fill),
